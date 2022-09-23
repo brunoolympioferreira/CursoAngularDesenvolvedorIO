@@ -17,7 +17,7 @@ import { CadastroComponent } from './demos/reactiveForms/cadastro/cadastro.compo
   declarations: [
     AppComponent,
     SobreComponent,
-    CadastroComponent
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
