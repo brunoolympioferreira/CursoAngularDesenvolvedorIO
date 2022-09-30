@@ -1,3 +1,5 @@
+import { ProdutoService } from './services/produto.service';
+import { ProdutoAppComponent } from './produto.app.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -10,16 +12,22 @@ import { ProdutoDetalheComponent } from './componentes/produto-card-detalhe.comp
 
 import { ProdutoRoutingModule } from './produto.route';
 import { ProdutoCountComponent } from './componentes/produto-count.component';
+import { EditarProdutoComponent } from './editar-produto/editar-produto.component';
 
 @NgModule({
     declarations: [
         ProdutoDashboardComponent,
         ProdutoDetalheComponent,
-        ProdutoCountComponent
+        ProdutoCountComponent,
+        EditarProdutoComponent,
+        ProdutoAppComponent
     ],
     imports: [
         CommonModule,
         ProdutoRoutingModule
+    ],
+    providers: [
+        ProdutoService
     ],
     exports: []
 })
