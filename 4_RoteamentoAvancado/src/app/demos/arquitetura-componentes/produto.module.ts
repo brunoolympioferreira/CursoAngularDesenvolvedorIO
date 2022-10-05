@@ -1,3 +1,4 @@
+import { ProdutosResolve } from './services/produto.resolve';
 import { ProdutoService } from './services/produto.service';
 import { ProdutoAppComponent } from './produto.app.component';
 import { NgModule } from '@angular/core';
@@ -27,7 +28,8 @@ import { EditarProdutoComponent } from './editar-produto/editar-produto.componen
         ProdutoRoutingModule
     ],
     providers: [
-        ProdutoService
+        ProdutoService,
+        ProdutosResolve
     ],
     exports: []
 })
