@@ -1,3 +1,4 @@
+import { TodoModule } from './demos/todo-list/todo.module';
 import { BarServices } from './demos/bar-di-zones/bar.service';
 import { BarModule } from './demos/bar-di-zones/bar.module';
 import { FileSizePipe } from './demos/pipes/filmes/filesize.pipe';
@@ -47,6 +48,7 @@ export const BAR_PROVIDERS: Provider[] = [
     ReactiveFormsModule,
     NavegacaoModule,
     HttpClientModule,
+    TodoModule,
     TextMask.TextMaskModule,
     NgBrazil,
     CustomFormsModule,

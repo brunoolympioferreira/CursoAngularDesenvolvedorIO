@@ -1,3 +1,4 @@
+import { TodoComponent } from './demos/todo-list/todo.component';
 import { NotFoundComponent } from './navegacao/not-found/not-found.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -15,6 +16,7 @@ const rootRouterConfig: Routes = [
     { path: 'sobre', component: SobreComponent },
     { path: 'filmes', component: FilmesComponent },
     { path: 'bar', component: BarComponent },
+    { path: 'todo', component: TodoComponent },
     { path: 'cadastro', component: CadastroComponent, canDeactivate: [CadastroGuard] },
     {
         path: 'produtos',

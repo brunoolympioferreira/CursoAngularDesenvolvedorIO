@@ -1,0 +1,3 @@
+//Executar na pasta do todo-list
+
+json-server todo.db.json
